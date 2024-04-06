@@ -6,7 +6,7 @@
 }
 body{
     height: 100vh;
-    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(bday.gif);
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url('./New\ Project\ 1\ [012A655].gif');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -18,8 +18,8 @@ body{
     width: 280px;
     height: 360px;
     position: absolute;
-    top: 25px;
-    left: 230px;
+    top: 10px;
+    left: 100px;
     transition: 2s;
     transform-style: preserve-3d;
 }
@@ -29,13 +29,13 @@ body{
 .block{
     position: absolute;
     top:200px;
-    right: 600px;
+    right:100%;
     perspective: 800px;
     margin-top:25rem;
 }
 .outside,.inside{
     width: 100%;
-    height: 100%;
+    height: fit-content;
     border-radius: 20px;
     text-align: center;
     padding: 1.5rem;
@@ -56,6 +56,7 @@ body{
     background-color: rgb(255, 244, 79);
     box-shadow: inset 0 5px 10px rgba(0,0,0,0.5);
     transform: rotateY(180deg);
+    backface-visibility:hidden;
 }
 .inside h3{
     font-size: 1.2rem;
@@ -89,13 +90,13 @@ body{
 {
     top:-110px;
     z-index: -1;
-    background-color: coral;
+    background-color: rgb(10, 253, 10);
 }
 .frames:nth-child(2){
-    background-color: goldenrod;
+    background-color: rgb(12, 209, 12);
 }
 .frames:nth-child(3)
 {
     top:100px;
-    background-color: burlywood;
+    background-color:rgb(10, 160, 10);
 }
